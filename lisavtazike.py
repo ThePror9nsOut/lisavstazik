@@ -71,7 +71,7 @@ def clearndraw():
         player[1] += 15-player[2]/10
     if(keys[pygame.K_a] and player[0] > 0):
         player[0] -= 15-player[2]/10
-    if(keys[pygame.K_d] and player[0] < cap[0] - player[2]):
+    elif(keys[pygame.K_d] and player[0] < cap[0] - player[2]):
         player[0] += 15-player[2]/10
 
     win.blit(player[3], (int(player[0]),int(player[1])))
